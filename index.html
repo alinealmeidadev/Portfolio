@@ -3,93 +3,101 @@
 <head>
     <meta charset="utf-8">
     <meta keywords="Aline Almeida, Desenvolvedora, mulher desenvolvedora, programação, minas programam">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,500;0,600;0,700;0,800;1,300;1,400&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=ABeeZee&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
     
-
     <title>
-        Portfólio - Aline Silva de Almeida
+        Portfólio - Aline Almeida
     </title>
 </head>
 <body>
-<navbar>
-    <ul>
-        <li><a href="#formacao">Formação</a></li>
-        <li><a href="#portfolio">Portfólio</a></li>
-        <li><a href="#contato">Contato</a></li>
-    </ul>
-</navbar>
-
-    <main>
-        <figure></figure>
-        <img src="./images/fotodeperfil.jpg" alt="Foto de perfil Aline" width="200px"/>
+    <header>
+        <nav class="menu">
+            <ul class="lista-menu">
+                <li><a href="#formacao">Formação</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="intro-content">
+        <figure>
+        <img src="./images/fotoperfil.png" alt="Foto de perfil Aline" width="200px"/>
         </figure>
-        <h1>Aline Almeida</h1>
-        <h2>Desenvolvedora Web</h2>
-        <p>Em transição de carreira para a área tecnológica, possuo diversos cursos, na área de programação, inclusive estou participando do projeto Minas Programam, onde estou desenvolvendo muitas habilidades na área de programação.</p>
+        <h1 class="title">Aline Almeida</h1>
+        <h2 class="subtitle">Desenvolvedora Web</h2>
+        <p class="intro">Em transição de carreira para a área tecnológica, possuo diversos cursos, na área de programação, inclusive estou participando do projeto Minas Programam, onde estou desenvolvendo muitas habilidades na área de programação.</p>
     </main>
     <section id="formacao">
-        <h2>Formação</h2>
+        <div class="conteudo">
+            <h1>Formação</h1>
             <ul>
-                <li>
-                    <h4>Curso de Desenvolvimento</h4>
-                    <h4>
+                <li class="item">
+                    <h4 class="descricao">Curso de Desenvolvimento</h4>
+                    <h3>
                         <a href="https://minasprogramam.com/" target="_blank">Minas Programam</a>
+                    </h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </li>
+                <li class="item">
+                    <h4 class="descricao">Desenvolvimento Web</h4>
+                    <h3>
+                        <a href="https://https://recode.org.br//" target="_blank">Recode</a>
                     </h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </li>
-                <li>
-                    <h4>HTML</h4>
-                    <h4><a href="https://www.ev.org.br/" target="_blank">Fundação Bradesco</a></h4>
+                <li class="item">
+                    <h4 class="descricao">HTML</h4>
+                    <a href="https://www.ev.org.br/" target="_blank">Fundação Bradesco</a>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </li>
-                <li>
-                    <h4>Curso: Python</h4>
-                    <h4><a href="https://www.sp.senac.br/" target="_blank"> Senac São Paulo</a></h4>
+                <li class="item">
+                    <h4 class="descricao">Curso: Python</h4>
+                    <a href="https://www.sp.senac.br/" target="_blank"> Senac São Paulo</a>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </li>
-                <li
-            </ul>
+        </div>
     </section>
     
     <section id="portfolio">
-        <h2>Portfólio</h2>
-        <ul>
-            <li>
-                <h4>Site: Regulii</h4>
-                <p>HTML e CSS</p>
-                <h4><a href="https://www.regulii.com.br/" target="_blank"> Regulii</a></h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </li>
-            <li>
-                <h4>Site: Mulheres</h4>
-                <p>HTML e CSS</p>
-                <h4><a href="https://www.mulheres.com.br/" target="_blank"> Mulheres</a></h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </li>
-        </ul>
+        <div class="conteudo">
+            <h1>Portfólio</h1>
+            <ul>
+                <li class="item">
+                    <h4 class="descricao">Site: Regulii</h4>
+                    <p>HTML e CSS</p>
+                    <h4><a href="https://www.regulii.com.br/" target="_blank"> Regulii</a></h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </li>
+                <li class="item">
+                    <h4 class="descricao">Site: Mulheres</h4>
+                    <p>HTML e CSS</p>
+                    <h4><a href="https://www.mulheres.com.br/" target="_blank"> Mulheres</a></h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </li>
+            </ul>
+        </div>
     </section>
-    <section id="contato">
-        <h2>Contato</h2>
-        <ul>
-            <li>
-                <h4>Site: Regulii</h4>
-                <p>HTML e CSS</p>
-                <h4><a href="https://www.regulii.com.br/" target="_blank"> Regulii</a></h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </li>
-            <li>
+      
     <footer id="contato">
         <div>
-            <img src="./images/email.png" alt="ícone e-mail" width="20px"/>
-            <a href="mailto:alinelmeidadev@gmail.com">alinealmeidadev@gmail.com</a>
+            <span class="fas fa-envelope-square"></span>
+            <a href="mailto:alinealmeidadev@gmail.com" target="_blank">alinealmeidadev@gmail.com</a>             
         </div>
         <div>
-            <img src="./images/linkedin.png" alt="ícone linkedin" width="20px"/>
-            <a href="https://www.linkedin.com/in/alinealmeidadev/" target="_blank">Aline Almeida</a>
+            <span class="fab fa-brands fa-linkedin-in"></span>
+            <a href="https://www.linkedin.com/in/alinealmeidadev/" target="_blank">LinkedIn</a> 
         </div>
         <div>
-            <img src="./images/github.png" alt="ícone github" width="20px"/>
-            <a href="https://github.com/alinealmeidadev/" target="_blank">Aline Almeida</a>
+            <span class="fab fa-brands fa-github"></span>
+            <a href="https://github.com/alinealmeidadev/" target="_blank">Git Hub</a>
         </div>
     </footer>
+
+<script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" data-auto-replace-svg="nest"></script>
 </body>
-        
+</html>
