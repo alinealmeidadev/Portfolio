@@ -38,6 +38,25 @@ li{
     text-decoration: none;
 }
 
+.menu li a:hover {
+    color: #49BFB3;
+    transition: 0.3s all;
+    transform: 2ms ease-in;
+    position: relative;
+}
+
+.menu li  ul{
+    position:absolute;
+    background-color: none;
+    display:none;
+}
+
+.menu li:hover ul, .menu li.over ul{
+    display:block;
+}
+
+
+
 img {
     border-radius: 50%;
 }
