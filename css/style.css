@@ -12,11 +12,11 @@ li{
     list-style: none;
 }
 .menu {
-    background-color: #e080ec;
+    background-color: #938DF8;
     display: flex;
-    justify-content: flex-end;
-    position: fixed;
-    width: 100px;
+    justify-content: flex-end;/*
+    position: inherit;
+    width: 100px;*/
 }
 
 .lista-menu {
@@ -34,7 +34,7 @@ li{
     font-weight: 700;
     font-size: 18px;
     line-height: 25px;
-    color: #ffffff ;
+    color: #dfdddd;
     text-decoration: none;
 }
 
@@ -44,14 +44,14 @@ img {
 
 .intro {
     font-family: 'ABeeZee', sans-serif;
-    color: #25065e;
+    color: #000000;
     font-size: 16px;
     max-width: 490px;
     text-align: center;
 }
 
 .intro-content {
-    background-color: #290427;
+    background-color: #dfdddd;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -66,14 +66,13 @@ img {
 .title {
     font-weight: 700;
     font-size: 36px;
-    color:#938DF8;
+    color:#9893f7;
 }
 
 .subtitle {
 
     font-size: 24px;
     color: #555050;
-
 }
 
 section h1{
@@ -83,8 +82,8 @@ section h1{
 }
 
 nav{
-    color: #555050;
-    border: 5px dotted #000000;
+    color: #ffffff;
+    border: 2px dotted #49BFB3;
 }
 
 .menu li{
@@ -95,23 +94,23 @@ nav{
     display: flex;
     max-width: 800px;
     margin: 0 auto;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 #portfolio{
-    background-color: #20021b;
+    background-color: #dfdddd;
 }
 
 .descricao{
     font-size: 16px;
     line-height: 22px;
-    color: #53f9ff;
+    color: #220036;
     font-weight: 700;
 }
 
 .item {
-    margin-bottom: 30%;
+    margin-bottom: 10%;
 }
 
 #contato {
