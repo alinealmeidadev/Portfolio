@@ -134,6 +134,7 @@ nav{
     line-height: 22px;
     color: #555050;
     font-weight: 600;
+    text-decoration: none;
 }
 
 .linksite a:visited {
