@@ -39,7 +39,7 @@ li{
 }
 
 .menu li a:hover {
-    color: #49BFB3;
+    color: #7df1e6;
     transition: 0.3s all;
     transform: 2ms ease-in;
     position: relative;
@@ -56,17 +56,19 @@ li{
 }
 
 
-
 img {
     border-radius: 50%;
 }
 
 .intro {
     font-family: 'ABeeZee', sans-serif;
+
     color: #000000;
-    font-size: 16px;
-    max-width: 490px;
+    font-size: 20px;
+    max-width: 500px;
     text-align: center;
+    letter-spacing: 2px;
+
 }
 
 .intro-content {
@@ -85,11 +87,10 @@ img {
 .title {
     font-weight: 700;
     font-size: 36px;
-    color:#9893f7;
+    color:#938DF8;
 }
 
 .subtitle {
-
     font-size: 24px;
     color: #555050;
 }
@@ -122,12 +123,22 @@ nav{
 }
 
 .descricao{
-    font-size: 16px;
-    line-height: 22px;
-    color: #220036;
+    font-size: 18px;
+    line-height: 25px;
+    color: #938DF8;
     font-weight: 700;
 }
 
+.linksite {
+    font-size: 16px;
+    line-height: 22px;
+    color: #555050;
+    font-weight: 600;
+}
+
+.linksite a:visited {
+    color: #555050;
+}
 .item {
     margin-bottom: 10%;
 }
