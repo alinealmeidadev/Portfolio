@@ -9,11 +9,140 @@ body {
     background-color: #070020;
 }
 
+
+
+
+
+
+
+
+
+stars{
+	width: 30px;
+	height: 30px;
+}
+
+
+
+.stars{
+	width: 3px;
+	height: 3px;
+	border-radius: 50%;
+	box-shadow: 50px 30px white,
+    100px 80px white,
+    80px 120px white,
+    300px 20px white,
+    250px 130px white,
+    200px 50px white,
+    150px 100px white,
+    320px 100px white;
+}
+
+
+
+@keyframes anim-stars {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(-150px);
+    }
+}
+
+
+
+.stars{
+	...
+	animation: anim-stars 10s linear infinite;
+}
+
+
+
+.stars::after{
+  content: " ";
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  box-shadow: 50px 30px white,
+    100px 80px white,
+    80px 120px white,
+    300px 20px white,
+    250px 130px white,
+    200px 50px white,
+    150px 100px white,
+    320px 100px white;
+}
+
+
+.stars{
+	position: relative;
+	width: 4px;
+	height: 4px;
+	...
+}
+
+
+.stars::after{
+  content: " ";
+  position: absolute;
+  top: 150px;
+  width: 3px;
+  ...
+}
+
+
+
+
+
+.stars2{
+  position: relative;
+  width: 1px;
+  height: 1px;
+  border-radius: 50%;
+  box-shadow: 15px 15px white,
+    125px 35px white,
+    50px 80px white,
+    10px 120px white,
+    275px 90px white,
+    230px 10px white,
+    120px 130px white,
+    300px 130px white,
+    220px 115px white;
+  animation: anim-stars 20s linear infinite;
+}
+
+.stars2::after{
+  content: " ";
+  position: absolute;
+  top: 150px;
+  width: 1px;
+  height: 1px;
+  border-radius: 50%;
+  box-shadow: 15px 15px white,
+    125px 35px white,
+    50px 80px white,
+    10px 120px white,
+    275px 90px white,
+    230px 10px white,
+    120px 130px white,
+    300px 130px white,
+    220px 115px white;
+}
+
+
+
+
+
+
+
+
+
+
+
 li{
     list-style: none;
 }
 .menu {
-    background-color: #070020;
     display: flex;
     justify-content: flex-end;
 
@@ -69,6 +198,7 @@ main{
   padding-left: auto;
   padding-right: auto;
   padding-bottom: 50px;
+
 }
 
 aside {
@@ -126,8 +256,7 @@ article {
 /*-------------------------*/
 
 #conhecimentos{
-  background-color: #aca9ec;
-
+  color: #aca9ec;
 }
 
 
@@ -136,8 +265,10 @@ article {
   width: 800px;
   height: 500px;
   margin: 0 auto;
-  padding-top: 500spx;
+  padding-top: 500px;
   padding-bottom: 10px;
+  color: #aca9ec;
+  font-weight: 700;
 
 }
 
@@ -179,6 +310,33 @@ article {
 
 /*-------------------------*/
 
+
+.contportfolio{
+  display: flex;
+  width: 800px;
+  height: 500px;
+  margin: 0 auto;
+  padding-top: 500px;
+  padding-bottom: 10px;
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 50px;
+  grid-row-gap: 0px;
+  }
+  
+  .div1 { grid-area: 1 / 1 / 2 / 2; }
+  .div2 { grid-area: 1 / 2 / 2 / 3; }
+  .div3 { grid-area: 1 / 3 / 2 / 4; }
+  .div4 { grid-area: 2 / 1 / 3 / 2; }
+  .div5 { grid-area: 2 / 2 / 3 / 3; }
+  .div6 { grid-area: 2 / 3 / 3 / 4; } 
+
+/*------------PORTFOLIO ANTIGO-----------------*/
+
 #portfolio{
   background-color: #070020;
   height: 500px;
@@ -205,16 +363,16 @@ article {
 }
 
 .descricao2{
-  font-size: 18px;
-  line-height: 25px;
+  font-size: 15px;
+  line-height: 20px;
   color: #7df1e6;
-  font-weight: 700;
+  font-weight: 500;
 }
 .linksite2 {
-  font-size: 16px;
-  line-height: 22px;
+  font-size: 14px;
+  line-height: 20px;
   color: #aca9ec;
-  font-weight: 600;
+  font-weight: 500;
   text-decoration: none;
 }
 
@@ -230,8 +388,8 @@ article {
 }
 
 .descricaoportfolio {
-  font-size: 16px;
-  line-height: 22px;
+  font-size: 14px;
+  line-height: 20px;
   color: #c4bdbd;
   font-weight: 100;
   padding-bottom: 20px;
@@ -241,10 +399,7 @@ article {
 
 
 
-#formacao{
-  background-color: #aca9ec;
-  padding-top: 50px;
-}
+#formacao{ padding-top: 50px;}
 
 
 .conteudo{
@@ -257,30 +412,31 @@ article {
 }
 h3{
   font-size: 24px;
-  color: #070020;
+  color: #c4bdbd;
   margin-right: 50px;
 }
 
 .descricao{
   font-size: 18px;
   line-height: 25px;
-  color: #555050;
+  color: #7df1e6;
   font-weight: 700;
 }
+
 h5 {
   font-size: 16px;
   line-height: 22px;
-  color: #555050;
+  color: #7df1e6;
   font-weight: 600;
   text-decoration: none;
 }
 
 h5 a:visited {
-  color: #555050;
+  color: #edd44b;
 }
 
 a:hover {
-  color: #7df1e6;
+  color: #edd44b;
   transition: 0.1s all;
   transform: 2ms ease-in;
   position: relative;
@@ -298,7 +454,7 @@ a:hover {
 
 
 #contato {
-    background-color: #3626ff;
+    background-color: #a4a0ec;
     height: 200px;
     padding-left: 50px;
     padding-top: 40px;
